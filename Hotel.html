@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    		<title>Hotel Booking</title> 
+    		<meta charset="utf-8"> 
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript">
+	function alert()
+	{
+		alert("Searching for the Best Hotels");
+	}
+	function one()
+	{
+		document.getElementById('one_color').style.color='blue';
+		return false;
+	}
+	function two()
+	{
+		document.getElementById('two_color').style.color='blue';
+		return false;
+	}
+	function three()
+	{
+		document.getElementById('three_color').style.color='blue';
+		return false;
+	}
+	function four()
+	{
+		document.getElementById('four_color').style.color='blue';
+		return false;
+	}
+	function five()
+	{
+		document.getElementById('five_color').style.color='blue';
+		return false;
+	}
+	function six()
+	{
+		document.getElementById('six_color').style.color='blue';
+		return false;
+	}
+	function seven()
+	{
+		document.getElementById('seven_color').style.color='blue';
+		return false;
+	}
+	function eight()
+	{
+		document.getElementById('eight_color').style.color='blue';
+		return false;
+	}
+	function nine()
+	{
+		document.getElementById('nine_color').style.color='blue';
+		return false;
+	}
+	function ten()
+	{
+		document.getElementById('ten_color').style.color='blue';
+		return false;
+	}
+	function spa()
+	{
+		document.getElementById('S_color').style.color='blue';
+		return false;
+	}
+	function wifi()
+	{
+		document.getElementById('W_color').style.color='blue';
+		return false;
+	}
+	function pool()
+	{
+		document.getElementById('P_color').style.color='blue';
+		return false;
+	}
+
+	function brunch()
+	{
+		document.getElementById('B_color').style.color='blue';
+		return false;
+	}
+
+	</script> 
+   	</head>
+    	<style>
+       		#jum1{ background-color:#262626; color:white;}
+ 	 	#jum2{background-color:#262626; color:white;}
+ 		.navbar{background-color:#262626;}
+  		.active{background-color:#000000;}
+   		body{background-image: url("data:image/jpeg;base64,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");}
+  		#jum3{background-color:#262626;}
+  
+  	</style>
+	<body>
+
+	<!--navbar-->
+	<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	<div class="navbar-header">
+	<a class="navbar-brand" href="minor project.html"><div style="color:#ff0000;">HappyJourney.com</div></a>
+	</div>
+	<ul class="nav navbar-nav">
+      	<li><a href="minor project.html">Home</a></li>
+      	<li><a href="flights.html">Flights</a></li>
+	<li class="active"><a href="Hotel.html">Hotels</a> </li>
+      	<li><a href="bus.html">Bus</a> </li>
+	
+    	</ul>
+	
+	<form class="navbar-form navbar-right">
+	<div class="input-group">
+        <input type="text" class="form-control" placeholder="e.g. Shimla">
+        <div class="input-group-btn">
+        <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+        </button>
+        </div>
+      	</div>
+    	</form>
+	
+    	<ul class="nav navbar-nav navbar-right">
+      	<li><a href="sign up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      	<li><a href="log in.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    	</ul>
+	
+  	</div>
+	</nav>
+
+
+	<!--carousel-->
+	<div class="container-fluid">
+   
+  	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    	<!-- Indicators -->
+    	<ol class="carousel-indicators">
+      	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      	<li data-target="#myCarousel" data-slide-to="1"></li>
+      	
+    	</ol>
+
+	<!-- Wrapper for slides -->
+    	<div class="carousel-inner">
+      	<div class="item active">
+       		<image src="https://cdn.theculturetrip.com/wp-content/uploads/2016/12/header_5330_3.jpg" height="700" width="1300" alt="Beach">
+      	</div>
+
+      	<div class="item">
+        	<img src="http://goldenagegroup.com.au/wp-content/uploads/2017/05/Man_Tong_Hero_NEW.jpg" height="700" width="1300" alt="Tokyo">
+      	</div>
+	
+
+
+    	<!-- Left and right controls -->
+    	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      	<span class="glyphicon glyphicon-chevron-left"></span>
+      	<span class="sr-only">Previous</span>
+    	</a>
+    	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+      	<span class="glyphicon glyphicon-chevron-right"></span>
+      	<span class="sr-only">Next</span>
+    	</a>
+  	</div>
+	</div>
+	<br><br>
+
+
+	<!--BlockQoute-->
+	<div class="container" >
+  	<div class="jumbotron id="jum1"">
+    	<blockquote>
+    	<h2>"Hospitality is present when something happens for you. It is absent when something happens to you. Those two simple prepositions - for and to - express it all." </h2>      
+    	<footer>Danny Meyer</footer>
+   	 </blockquote>
+  	</div>
+	</div>
+	<br><br>
+
+
+	
+<!--thumnail-->
+<div class="container jumbotron" id="jum3">
+<div class="row text-center">
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="http://opentextbc.ca/introtourism/wp-content/uploads/sites/38/2015/03/16531216117_0a64a0dfb3_z.jpg" alt="Expert">
+      <h3><strong>Servicing</strong></h3>
+      <h4>Faithful Servants<br>
+	  Never Retire</h4>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="https://drop.ndtv.com/albums/COOKS/corngallery/creolespicedcornthumb_640x480.jpg" alt="New culinary tours" height="320" width="285">
+      <h3><strong>Food</strong></h3>
+	  <h4>Good Food<br>
+	      Good Mood</h4>
+      </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="https://3.imimg.com/data3/RH/UR/MY-5468173/customized-hotel-uniform-500x500.jpg" alt="trend alert">
+      <h3><strong>Staff</strong></h3>
+      <h4>Get Closer than ever <br>
+	  to your Customers</h4>
+	  </div>
+  </div>
+</div>
+<br>
+<div class="row text-center">
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="http://3.imimg.com/data3/JA/SV/MY-5301338/catering-kitchen-equipments-500x500.jpg" alt="Expert">
+      <h3><strong>Kitchen</strong></h3>
+      <h4>This Kitchen is <br>
+	  Seasoned with Love</h4>
+	  </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="http://www.chinadaily.com.cn/m/jiangsu/kunshan/images/attachement/jpg/site1/20160414/286ed488c7f1187950d401.jpg" alt="New culinary tours">
+      <h3><strong>Hotel Premises</strong></h3>
+	  <h4>Advantage of Hotel is that<br>
+	      it's a refuge from home life</h4>
+      </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="http://www.zadar.travel/images/original/taxi__1293364137jpeg" alt="trend alert">
+      <h3><strong>Taxi</strong></h3>
+      <h4>Hop in. <br>
+	  Let's Go!</h4>
+	  </div>
+  </div>
+</div>
+</div>
+<br><br>
+
+
+<!--Search Hotels-->
+<div class="container">
+<div class="jumbotron" id="jum2">
+<h2 class="text-center">Search Hotels</h2><br>
+
+<div class="row">
+    	<div class="col-sm-6">
+        <p class="text-center">Check in Date</p>
+        </div>
+	<div class="col-sm-6">
+        <input class="form-control" id="name" name="check in date" placeholder="_ _ / _ _ / _ _ _ _" type="text" required>
+        </div>
+</div>
+<div class="row">
+        <div class="col-sm-6">
+        <p class="text-center">Check out Date</p>
+        </div>
+	<div class="col-sm-6">
+        <input class="form-control" id="name" name="check out date" placeholder="_ _ / _ _ / _ _ _ _" type="text" required>
+        </div>
+</div>
+<div class="row">
+	<div class="col-sm-6">
+        <p class="text-center">Rooms</p>
+    </div>
+    <div class="col-sm-6">
+    	<select class="form-control" id="sel1">
+        <option>Delux Room</option>
+        <option>Single Bed Room</option>
+        <option>Double Bed Room</option>
+        <option>King Bedroom</option>
+	<option>Queen Bedroom</option>
+	<option>Interconnecting Room</option>
+	<option>Honeymoon Suite</option>
+      </select>
+    </div>
+</div>
+<br>
+<div class="row">
+    	<div class="col-sm-7">
+        <p class="text-center">Hotel Class</p>
+        </div>
+	<div class="form-horizontal">
+        <div class="col-sm-1">
+        <center><button type="button" value="one" id="one_color" onclick="one();" class="btn btn-danger">1 Star</button></center>
+        </div>
+        <div class="col-sm-1">
+        <center><button type="button" value="two" id="two_color" onclick="two();" class="btn btn-warning">2 Star</button></center>
+        </div>
+	<div class="col-sm-1">
+        <center><button type="button" value="three" id="three_color" onclick="three();" class="btn btn-success">3 Star</button></center>
+        </div>
+	<div class="col-sm-1">
+        <center><button type="button" value="four" id="four_color" onclick="four();" class="btn btn-info">4 Star</button></center>
+        </div>
+	<div class="col-sm-1">
+        <center><button type="button" value="five" id="five_color" onclick="five();" class="btn btn-primary">5 Star</button></center>
+        </div>
+	</div>
+</div>
+<br>
+<div class="row">
+    	<div class="col-sm-7">
+        <p class="text-center">Guest Ratings</p>
+        </div>
+        <div class="col-sm-1">
+        <center><button type="button" value="six" id="six_color" onclick="six();" class="btn btn-danger btn-sm">6+</button></center>
+        </div>
+        <div class="col-sm-1">
+        <center><button type="button" value="seven" id="seven_color" onclick="seven();" class="btn btn-warning btn-sm">7+</button></center>
+        </div>
+	<div class="col-sm-1">
+        <center><button type="button" value="eight" id="eight_color" onclick="eight();" class="btn btn-success btn-sm">8+</button></center>
+        </div>
+	<div class="col-sm-1">
+        <center><button type="button" value="nine" id="nine_color" onclick="nine();" class="btn btn-info btn-md">9+</button></center>
+        </div>
+	<div class="col-sm-1">
+        <center><button type="button" value="ten" id="ten_color" onclick="ten();" class="btn btn-primary btn-md">10</button></center>
+        </div>
+</div>
+<div class="row">
+    	<div class="col-sm-4">
+        <p class="text-center">Price</p>
+        </div>
+        <div class="col-sm-4">
+        <center></p>From:</p></center><input class="form-control" id="name" name="price" placeholder=" _ _ _ _ _" type="number" required>
+        </div>
+        <div class="col-sm-4">
+        <center></p>To:</p></center><input class="form-control" id="name" name="price" placeholder=" _ _ _ _ _" type="number" required>
+        </div>
+</div>
+<br>
+<div class="row">
+    	<div class="col-sm-4">
+        <p class="text-center">Facilities</p>
+        </div>
+        <div class="col-sm-2">
+        <button type="button" value="Spa" id="S_color" onclick="spa();" class="btn btn-default">Spa</button>
+        </div>
+        <div class="col-sm-2">
+        <button type="button" value="Wifi" id="W_color" onclick="wifi();" class="btn btn-default">WiFi</button>
+        </div>
+	<div class="col-sm-2">
+        <button type="button" value="Pool" id="P_color" onclick="pool();" class="btn btn-default">Pool</button>
+        </div>
+	<div class="col-sm-2">
+        <button type="button" value="Brunch" id="B_color" onclick="brunch();" class="btn btn-default">Brunch</button>
+        </div>
+</div>
+<br>
+
+        <center><button type="button" onclick="alert();" class="btn btn-default">Search</button></center>
+        
+</div>
+</div>
+<br><br>
+	
+
+	<!--Contact us-->
+	<!--div class="container-fluid"-->
+	<div class="jumbotron" id="jum2">
+	<div class="container bg-grey">
+  	<h2 class="text-center">CONTACT US</h2><br>
+  	<div class="row">
+    	<div class="col-sm-5">
+      	<p>Contact us and we'll get back to you within 24 hours.</p>
+      	<p><span class="glyphicon glyphicon-map-marker"></span> Delhi, India</p>
+      	<p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      	<p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> 
+    	</div>
+    	<div class="col-sm-7">
+      	<div class="row">
+        <div class="col-sm-6 form-group">
+        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      	</div>
+      	<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      	<div class="row">
+        <div class="col-sm-12 form-group">
+        <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      	</div> 
+    	</div>
+  	</div>
+	</div>
+	</div>
+	<!--/div-->
+	</footer><body>
+<html>
